@@ -30,12 +30,21 @@ def main():
     if size != expected['bytes'] or digest != expected['sha256']:
         raise SystemExit('Archive size or SHA256 mismatch; extraction refused.')
     members = {m['name'].removeprefix('./'): m for m in expected['members']}
+    allowed_directories = {'.'}
+    for name in members:
+        allowed_directories.update(str(parent) for parent in PurePosixPath(name).parents)
     observed = {}
+    directory_count = 0
     with tarfile.open(args.archive, mode='r|gz') as archive:
         for item in archive:
             name = item.name.removeprefix('./')
             path = PurePosixPath(name)
-            if path.is_absolute() or '..' in path.parts or not item.isfile():
+            if path.is_absolute() or '..' in path.parts:
+                raise SystemExit('Unsafe or unexpected archive entry; extraction refused.')
+            if item.isdir() and str(path) in allowed_directories:
+                directory_count += 1
+                continue
+            if not item.isfile():
                 raise SystemExit('Unsafe or unexpected archive entry; extraction refused.')
             if name not in members or name in observed:
                 raise SystemExit('Unexpected or duplicate archive member.')
@@ -59,6 +68,8 @@ def main():
         args.output.mkdir(parents=True)
         with tarfile.open(args.archive, mode='r|gz') as archive:
             for item in archive:
+                if item.isdir():
+                    continue
                 name = item.name.removeprefix('./')
                 destination = args.output / name
                 destination.parent.mkdir(parents=True, exist_ok=True)
@@ -66,7 +77,8 @@ def main():
                     shutil.copyfileobj(source, target, length=8 * 1024 * 1024)
     report = {'status': 'PASS', 'archive': expected['filename'], 'archive_bytes': size,
               'archive_sha256': digest, 'all_members_verified': True, 'member_count': len(observed),
-              'members': observed, 'extracted': bool(args.output), 'model_execution': False}
+              'directory_count': directory_count, 'members': observed,
+              'extracted': bool(args.output), 'model_execution': False}
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)
         args.report.write_text(json.dumps(report, indent=2) + '\n')

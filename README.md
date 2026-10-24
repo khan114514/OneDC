@@ -25,7 +25,7 @@ python3 tools/download_assets.py --output downloads/onedc-assets.tar.gz
 python3 tools/restore_assets.py --archive downloads/onedc-assets.tar.gz --output restored_assets
 ```
 
-下载脚本按固定清单校验每个分片和完整归档；恢复脚本校验全部 16 个成员后才解包，不执行模型反序列化。压缩包约 9.19 GB，解压文件约 10.3 GB；同时保留两者需预留约 22 GB 空间。
+下载脚本按固定清单校验每个分片和完整归档；恢复脚本校验全部 16 个成员后才解包，不执行模型反序列化。压缩包约 9.19 GB，解压文件约 9.88 GB；同时保留两者需预留约 22 GB 空间。
 
 普通论文推理按官方 README 安装 Linux/CUDA 环境并编译熵编码器。auto0776 使用自身冻结源码与 lock 文件，不能直接用上游最新快照替换历史评测代码。GPU、Harbor 和最终质检的实际完成情况见缺口说明。
 

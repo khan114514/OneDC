@@ -3,9 +3,15 @@
   "scope": "asset recovery and expert handoff, not final task acceptance",
   "source_and_handoff_staged": true,
   "hidden_inputs_recovered_and_verified": true,
-  "model_archive_download": "in progress",
-  "model_archive_current_hash_verified": false,
+  "model_archive_download": "complete",
+  "model_archive_current_hash_verified": true,
   "release_parts_uploaded_and_verified": false,
   "gpu_or_model_execution_performed": false,
-  "final_task_qa_passed": false
+  "final_task_qa_passed": false,
+  "source_and_handoff_uploaded": true,
+  "source_commit": "0a8e27d",
+  "release_metadata_created": true,
+  "model_archive_all_16_members_verified": true,
+  "archive_sha256": "adf37d23103580414fe4df8f51d6e8ca642b79af717d758717b21d2b316a3a1d",
+  "archive_bytes": 9193898241
 }

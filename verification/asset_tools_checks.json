@@ -5,6 +5,7 @@
     "reconstruct exact bytes from independent transport parts",
     "verify complete archive and extract expected bytes",
     "reject corrupt download before publishing archive",
-    "reject corrupt archive before extraction"
+    "reject corrupt archive before extraction",
+    "accept safe ancestor directory entries and extract nested file; reproduced failure before fix"
   ]
 }
