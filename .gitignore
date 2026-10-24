@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+/downloads/
+/restored_assets/
+/working_task/
+/asset-ingest/
+*.tar.gz.part-*
+onedc-assets.tar.gz
+*.partial
+.env
+.env.*
+id_rsa
+id_ed25519

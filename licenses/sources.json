@@ -1,0 +1,32 @@
+[
+  {
+    "file": "licenses/TAESD-MIT.txt",
+    "source": "https://raw.githubusercontent.com/madebyollin/taesd/main/LICENSE",
+    "bytes": 1073,
+    "sha256": "261497cf8e9ed613ed1fa5ddf48af32cdf50545b2ccd9edd7eacc91fb9255d6e",
+    "status": "retrieved"
+  },
+  {
+    "file": "licenses/TORCHVISION-BSD-3-Clause.txt",
+    "source": "https://raw.githubusercontent.com/pytorch/vision/main/LICENSE",
+    "bytes": 1517,
+    "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+    "status": "retrieved"
+  },
+  {
+    "file": "licenses/SD15-CreativeML-OpenRAIL-M.txt",
+    "source": "https://huggingface.co/spaces/CompVis/stable-diffusion-license/raw/main/license.txt",
+    "bytes": 14385,
+    "sha256": "be351ebe7ac01bcdbb018639aadcfd38f136b7dc3f2a3d4d3a24db51d1b210ef",
+    "status": "retrieved"
+  },
+  {
+    "file": "licenses/SD21-CreativeML-OpenRAIL-plus-plus-M.txt",
+    "source": "https://huggingface.co/sd2-community/stable-diffusion-2/raw/main/LICENSE-MODEL",
+    "original_source": "https://huggingface.co/stabilityai/stable-diffusion-2/blob/main/LICENSE-MODEL",
+    "provenance": "SD2 community mirror of original November 24 2022 license; original endpoint currently requires authorization.",
+    "bytes": 14206,
+    "sha256": "e514164be7f2ca2c0fb39e7283b01ab4a06d802837eaf171aa4645cfd7ee1157",
+    "status": "retrieved"
+  }
+]

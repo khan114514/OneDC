@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-24",
+  "status": "PASS",
+  "scope": "8 original image files plus original manifest; exact SHA256 match against the historical task manifest",
+  "source_archive": "final-calibration-evidence.tgz",
+  "files": [
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim05.png",
+      "bytes": 785610,
+      "sha256": "10349e963c5c813d327852f82c1795fa4148d69fedffc4c589bee458e3ac3d53"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim07.png",
+      "bytes": 566322,
+      "sha256": "b77d3f006f42414bb242222e0482e750c0fb9e5ee8d4bed2f6f11c5605fe54a4"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim22.png",
+      "bytes": 701970,
+      "sha256": "1cee58eb1f2d9c7ebb254d208a03c783ce6cf2c4d8c2cf45e235dd23b4ce1b29"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/manifest.json",
+      "bytes": 717,
+      "sha256": "03b37b0f1a53181afa2b8392d0d7ef6c641b343524d0fd10d79ab12009410497"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim09.png",
+      "bytes": 582899,
+      "sha256": "6a4361c2fc194feb4edaa9f9a4a0620fb9943e460ac7fdf037fb0f6dd6607a7d"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim10.png",
+      "bytes": 593463,
+      "sha256": "9dfb70f5867c29ff9ed6313683f19b3d867849e40fbc0c4c54a4a89df341cf23"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim15.png",
+      "bytes": 612582,
+      "sha256": "7538cbb80cb9103606c48b806eae57d56c885c7f90b9b3be70a41160f9cbb683"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim03.png",
+      "bytes": 502888,
+      "sha256": "e25ca1ff2f0c0cb5fdfd5f9b0a0bb21ac4c3de3c84a67f35b09a85d3306249db"
+    },
+    {
+      "path": "trusted_verifier_inputs/hidden_assets/kodim06.png",
+      "bytes": 618959,
+      "sha256": "363510303b715d4cbc384e1ce227e466b613a09e1b71ae985882bf8e7fbd9b18"
+    }
+  ]
+}

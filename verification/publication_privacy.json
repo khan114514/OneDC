@@ -1,0 +1,40 @@
+{
+  "scanner": "independent-artifact-privacy-audit-v1",
+  "official_protocol": false,
+  "scanner_sha256": "7b837d97463adc68ecf7b17bedb488f377788e370ccb132efdef22623c75af68",
+  "explicit_container_home_exceptions": [
+    "/home/onedc-agent"
+  ],
+  "explicit_container_tmpfs_exceptions": [],
+  "target": "publication-candidate",
+  "status": "BLOCK",
+  "input_inventory_sha256": "dbdca37122b572ef58abf00e862ac565f0bd47fd36d0b4ca3e679641bf94e112",
+  "input_file_sha256": null,
+  "stats": {
+    "files": 1210,
+    "archive_members": 0,
+    "decoded_bytes": 48244782,
+    "png_metadata_chunks": 172
+  },
+  "finding_count": 1,
+  "findings": [
+    {
+      "code": "SECRET_VALUE",
+      "path": "auto0776/skills/autoresearch-manager/scripts/test_manager.py",
+      "line": 247
+    }
+  ],
+  "final_release_certification": false,
+  "manual_review": [
+    {
+      "code": "SECRET_VALUE",
+      "path": "auto0776/skills/autoresearch-manager/scripts/test_manager.py",
+      "line": 247,
+      "decision": "non-secret false positive",
+      "reason": "The assignment creates a pathlib file named secret in a unit test temporary directory. The following line writes the literal TEST SENTINEL. No key, token, cookie or credential is present."
+    }
+  ],
+  "unresolved_findings": [],
+  "publication_review": "CLEARED_WITH_DOCUMENTED_NON_SECRET_FALSE_POSITIVE",
+  "official_privacy_check_completed": false
+}

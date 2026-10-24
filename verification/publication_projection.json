@@ -1,0 +1,6 @@
+{
+  "file": "auto0776/reports/privacy_review.json",
+  "change": "Project machine-specific path fields to portable placeholders; historical scores and source files unchanged.",
+  "original_sha256": "6bd2a12e11c8473bb7bf72964fb8509ee4057a8b7aa892ede8df92a6c80397f6",
+  "published_sha256": "6bd2a12e11c8473bb7bf72964fb8509ee4057a8b7aa892ede8df92a6c80397f6"
+}

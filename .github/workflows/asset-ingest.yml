@@ -1,0 +1,62 @@
+name: Publish verified recovery assets
+on:
+  push:
+    branches:
+      - main
+      - 'asset-ingest/**'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: onedc-assets-20261024
+    steps:
+      - name: Fetch the exact triggering commit
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          git init source
+          git -C source remote add origin "https://github.com/${GH_REPO}.git"
+          git -C source fetch --depth=1 origin "$SOURCE_SHA"
+          git -C source checkout --detach FETCH_HEAD
+      - name: Ensure the recovery release exists
+        run: |
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --target main --title 'OneDC lambda4.6 original recovery assets' --notes 'Original audited recovery archive, split without changing its bytes. Download and SHA256 instructions are in the repository README. Third-party model licenses and restrictions remain applicable. Transfer completion is recorded in assets/release_manifest.json.' || gh release view "$RELEASE_TAG" >/dev/null
+          fi
+      - name: Publish archive metadata
+        if: github.ref == 'refs/heads/main'
+        run: gh release upload "$RELEASE_TAG" source/assets/archive_manifest.json --clobber
+      - name: Reassemble and verify one transport part
+        if: startsWith(github.ref, 'refs/heads/asset-ingest/')
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          root = pathlib.Path('source')
+          batch = json.loads((root / 'batch.json').read_text())
+          output = pathlib.Path(batch['name'])
+          assert output.name == str(output) and output.name.startswith('onedc-assets.tar.gz.part-')
+          full_hash = hashlib.sha256()
+          total = 0
+          with output.open('xb') as target:
+              for segment in batch['segments']:
+                  path = root / 'payload' / segment['name']
+                  assert path.parent == root / 'payload'
+                  raw = path.read_bytes()
+                  assert len(raw) == segment['bytes']
+                  assert hashlib.sha256(raw).hexdigest() == segment['sha256']
+                  target.write(raw)
+                  full_hash.update(raw)
+                  total += len(raw)
+          assert total == batch['bytes'] and full_hash.hexdigest() == batch['sha256']
+          print('Verified', output.name, total, full_hash.hexdigest())
+          PY
+      - name: Upload the verified part
+        if: startsWith(github.ref, 'refs/heads/asset-ingest/')
+        run: |
+          part_name=$(python3 -c 'import json; print(json.load(open("source/batch.json"))["name"])')
+          gh release upload "$RELEASE_TAG" "$part_name"

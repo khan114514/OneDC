@@ -1,0 +1,11 @@
+{
+  "status": "IN_PROGRESS",
+  "scope": "asset recovery and expert handoff, not final task acceptance",
+  "source_and_handoff_staged": true,
+  "hidden_inputs_recovered_and_verified": true,
+  "model_archive_download": "in progress",
+  "model_archive_current_hash_verified": false,
+  "release_parts_uploaded_and_verified": false,
+  "gpu_or_model_execution_performed": false,
+  "final_task_qa_passed": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "small local integrity and corruption checks, no model execution",
+  "cases": [
+    "reconstruct exact bytes from independent transport parts",
+    "verify complete archive and extract expected bytes",
+    "reject corrupt download before publishing archive",
+    "reject corrupt archive before extraction"
+  ]
+}

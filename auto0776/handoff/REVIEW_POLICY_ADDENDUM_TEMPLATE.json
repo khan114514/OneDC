@@ -1,0 +1,34 @@
+{
+  "policy_id": "user-exemptions-2026-10-22",
+  "template_only": true,
+  "input_zip_sha256": null,
+  "original_reports": [],
+  "reviewer_identity": null,
+  "independent_session_evidence": null,
+  "finding_assessments": [],
+  "allowed_finding_classes": [
+    "waived",
+    "core_failure",
+    "core_pending",
+    "satisfied"
+  ],
+  "finding_record_fields": [
+    "check_id",
+    "original_status",
+    "fact",
+    "evidence",
+    "classification",
+    "exemption_basis_or_core_reason"
+  ],
+  "unwaived_core_issues": [],
+  "all_other_applicable_core_checks_completed": null,
+  "original_tool_decision": null,
+  "current_user_policy_decision": "NOT_REVIEWED",
+  "runtime_verification": {
+    "target_gpu": "not_verified_by_policy_update",
+    "current_image_selection": "not_verified_by_policy_update",
+    "current_platform_invocation": "not_verified_by_policy_update",
+    "current_nop": "not_verified_by_policy_update"
+  },
+  "note": "Template only. Filling this is not an independent QA run or platform acceptance."
+}
