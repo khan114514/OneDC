@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".github/workflows/asset-ingest.yml",
-      "bytes": 2868,
-      "sha256": "911a1d9327caef76ac6e2a792124db0b79b204f5979712b57523585f507e8ac2"
+      "bytes": 3650,
+      "sha256": "0a410921ecaac60d179f8c2060d609624a7336d7879c220408f65975cc358883"
     },
     {
       "path": ".gitignore",
@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2781,
-      "sha256": "90b58f00dd913459bb8421dbedb4cdeec04fc678805e9b569141f7eedec28da7"
+      "bytes": 2994,
+      "sha256": "8259d8be58af808a548e7c0c3c681112133f6830b97861057d089cad5696ef3a"
     },
     {
       "path": "assets/archive_manifest.json",
@@ -28,8 +28,8 @@
     },
     {
       "path": "assets/release_manifest.json",
-      "bytes": 214,
-      "sha256": "23e535e756921d1f13afccefcfda501d9ee097aeb9d4d2b823d1a270f344484d"
+      "bytes": 3032,
+      "sha256": "94b82614bc1c87b2a0b0976cc99bc1dff5449fc97b5c79b12672b3443b163a53"
     },
     {
       "path": "auto0776/.gitignore",
@@ -5643,8 +5643,8 @@
     },
     {
       "path": "docs/ASSETS.md",
-      "bytes": 2073,
-      "sha256": "d23c8a935484fe5d839da8fdd439841eca446a98dee732d07912c9f51dca6489"
+      "bytes": 2455,
+      "sha256": "a5488b40fc2dd9e5ded8fa04cec7e0d532e1eceb1401a6817b044d53819b6b3c"
     },
     {
       "path": "docs/COMPLETENESS.md",
@@ -6048,8 +6048,8 @@
     },
     {
       "path": "verification/asset_tools_checks.json",
-      "bytes": 446,
-      "sha256": "bc65f91a712da3e2056388d567e957b42a3f972b864c3eaf1de95f5273206235"
+      "bytes": 533,
+      "sha256": "9bf9067ecb747f8b6a4b72ca2570470490c187d4d6ac34583a9d7fd8b1a2bfd2"
     },
     {
       "path": "verification/handoff_integrity.json",

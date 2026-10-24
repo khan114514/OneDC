@@ -30,7 +30,19 @@ jobs:
           fi
       - name: Publish archive metadata
         if: github.ref == 'refs/heads/main'
-        run: gh release upload "$RELEASE_TAG" source/assets/archive_manifest.json --clobber
+        run: |
+          python3 - <<'PY'
+          import pathlib, zipfile
+          root = pathlib.Path('source')
+          paths = list((root / 'licenses').glob('*')) + [root / 'upstream/onedc/LICENSE.md', root / 'upstream/onedc/src/modules/dmd/LICENSE.md']
+          with zipfile.ZipFile('THIRD_PARTY_LICENSES.zip', 'w', compression=zipfile.ZIP_DEFLATED) as bundle:
+              for path in sorted(paths):
+                  if path.is_file():
+                      bundle.write(path, path.relative_to(root).as_posix())
+          PY
+          git -C source archive --format=zip --output=../OneDC_recovery_source.zip HEAD
+          sha256sum OneDC_recovery_source.zip THIRD_PARTY_LICENSES.zip > SOURCE_SHA256SUMS
+          gh release upload "$RELEASE_TAG" source/assets/archive_manifest.json THIRD_PARTY_LICENSES.zip OneDC_recovery_source.zip SOURCE_SHA256SUMS --clobber
       - name: Reassemble and verify one transport part
         if: startsWith(github.ref, 'refs/heads/asset-ingest/')
         run: |

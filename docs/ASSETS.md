@@ -2,7 +2,9 @@
 
 目标 Release：<https://github.com/khan114514/OneDC/releases/tag/onedc-assets-20261024>。上传状态由 `verification/DELIVERY_STATUS.json` 记录；未完成时脚本不会把计划链接当成已可用下载。
 
-`assets/archive_manifest.json` 保存原始 16 个 tar 成员的精确字节数与 SHA-256；`assets/release_manifest.json` 保存传输分片及实际 Release 元数据。归档不改包，分片按数字顺序连接后与网盘原包完全相同。
+源码与交接请选择 Release 的 `OneDC_recovery_source.zip`，按 `SOURCE_SHA256SUMS` 校验，或 clone 本仓库 main。该 Release 的 tag 为初始发布锚点，GitHub 自动生成的 Source code ZIP 是早期快照；恢复工具的完整更新在上述专用源码包及 main 中。
+
+`assets/archive_manifest.json` 保存原始 16 个 tar 成员的精确字节数与 SHA-256；`assets/release_manifest.json` 保存传输分片及实际 Release 元数据。归档不改包，分片按数字顺序连接后与网盘原包完全相同。Release 同时附带 `THIRD_PARTY_LICENSES.zip`，离线转交权重时一并保留。
 
 | 文件 | 字节数 | SHA-256 |
 |---|---:|---|

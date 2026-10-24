@@ -7,6 +7,7 @@
 | 需要做什么 | 入口 |
 |---|---|
 | 下载 λ=4.6 两份权重及所需公共缓存 | [资产下载说明](docs/ASSETS.md)、[Release](https://github.com/khan114514/OneDC/releases/tag/onedc-assets-20261024) |
+| 下载完整交接、源码与恢复工具 | [OneDC_recovery_source.zip](https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/OneDC_recovery_source.zip)，或直接 clone 本仓库 main |
 | 核对传输和包内全部文件 | `python3 tools/restore_assets.py --archive downloads/onedc-assets.tar.gz` |
 | 查看官方推理和训练代码 | [upstream/onedc/readme.md](upstream/onedc/readme.md)；[固定提交](upstream/provenance.json) |
 | 接手 auto0776 返修 | [auto0776/START_HERE.md](auto0776/START_HERE.md)、[当前口径](auto0776/handoff/00_CURRENT_REVIEW_POLICY.md) |
