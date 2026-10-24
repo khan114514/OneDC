@@ -13,7 +13,7 @@
 | 接手 auto0776 返修 | [auto0776/START_HERE.md](auto0776/START_HERE.md)、[当前口径](auto0776/handoff/00_CURRENT_REVIEW_POLICY.md) |
 | 核对这次补了什么、还缺什么 | [完整性与缺口](docs/COMPLETENESS.md)、[交付状态](verification/DELIVERY_STATUS.json) |
 
-权重包包含 `lambda4.6/model.safetensors`、`model_1.safetensors`、SD1.5 UNet 与 scheduler、SD2.1 VAE、TAESD，以及 AlexNet/VGG16 缓存。原始归档 **9,193,898,241 字节**，SHA-256 为 `adf37d23103580414fe4df8f51d6e8ca642b79af717d758717b21d2b316a3a1d`。具体 Release 上传与本次核验状态以交付状态文件为准。
+权重包包含 `lambda4.6/model.safetensors`、`model_1.safetensors`、SD1.5 UNet 与 scheduler、SD2.1 VAE、TAESD，以及 AlexNet/VGG16 缓存。原始归档 **9,193,898,241 字节**，SHA-256 为 `adf37d23103580414fe4df8f51d6e8ca642b79af717d758717b21d2b316a3a1d`。9 个 Release 分片已全部核对 GitHub 端 SHA-256；本次原包及全部 16 个成员也已核验，回执见 `verification/`。
 
 另补回 8 张原始 Hidden 图和原始 manifest，位于 `trusted_verifier_inputs/hidden_assets/`，9 个文件逐一匹配历史 SHA-256。它们仅供可信 Verifier 准备；整个仓库包含 Reference、轨迹和专家证据，**不能直接挂载或整体交给研究 Actor**。
 

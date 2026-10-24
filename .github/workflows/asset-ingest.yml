@@ -43,6 +43,7 @@ jobs:
           git -C source archive --format=zip --output=../OneDC_recovery_source.zip HEAD
           sha256sum OneDC_recovery_source.zip THIRD_PARTY_LICENSES.zip > SOURCE_SHA256SUMS
           gh release upload "$RELEASE_TAG" source/assets/archive_manifest.json THIRD_PARTY_LICENSES.zip OneDC_recovery_source.zip SOURCE_SHA256SUMS --clobber
+          gh release edit "$RELEASE_TAG" --notes-file source/docs/RELEASE_NOTES.md
       - name: Reassemble and verify one transport part
         if: startsWith(github.ref, 'refs/heads/asset-ingest/')
         run: |

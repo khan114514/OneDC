@@ -23,18 +23,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 4622,
-      "sha256": "bcec93a2ae8428f7486ea04a961b2a96423d1921d50f8cd83eb908542e262e3c"
+      "bytes": 4935,
+      "sha256": "8cdd825cf97ba0634160d31d305e0615158db5bfd526fd5de00d5884c48ad17e"
     },
     {
       "path": "START_HERE.md",
-      "bytes": 3370,
-      "sha256": "a9abfb336c94d8a6cc4395225e3d5a84d2785e81cfc9109926fc9ebeef41f8fc"
+      "bytes": 3683,
+      "sha256": "4daee01ca4db16f6ef4722a975b973508b3054becac166f258924e6ce844b5e6"
     },
     {
       "path": "assets/RECOVERY.md",
-      "bytes": 4225,
-      "sha256": "9c1d188523913217303c25ea8f6c19959e8b69cab4fee382d0b5fc5d69f877b7"
+      "bytes": 4544,
+      "sha256": "156233fb4576b536f075f59163d9f78453e6721bf942c2b56ec4e707910d863b"
     },
     {
       "path": "assets/archives.json",

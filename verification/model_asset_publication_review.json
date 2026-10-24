@@ -1,0 +1,13 @@
+{
+  "status": "PASS_MATCHED_PREVIOUSLY_AUDITED_ASSET",
+  "scope": "Specialized large numeric model archive publication review, separate from ordinary source-file privacy scanning.",
+  "current_archive_receipt": "verification/archive_transfer_check.json",
+  "previous_dedicated_audit": "auto0776/assets/onedc_assets_deep_audit.json",
+  "archive_sha256": "adf37d23103580414fe4df8f51d6e8ca642b79af717d758717b21d2b316a3a1d",
+  "member_count": 16,
+  "all_current_member_hashes_match_previous_dedicated_audit": true,
+  "content": "Numeric public model weights, primitive model configs, public revision identifiers, and primitive file manifest.",
+  "unreviewed_or_added_archive_members": 0,
+  "model_code_or_pickle_execution_performed": false,
+  "third_party_licenses": "licenses/README.md"
+}

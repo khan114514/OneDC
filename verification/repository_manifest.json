@@ -1,10 +1,10 @@
 {
-  "scope": "main-branch publication files, excluding this self-referential manifest",
+  "scope": "Final main-branch publication files, excluding this self-referential manifest.",
   "files": [
     {
       "path": ".github/workflows/asset-ingest.yml",
-      "bytes": 3650,
-      "sha256": "0a410921ecaac60d179f8c2060d609624a7336d7879c220408f65975cc358883"
+      "bytes": 3733,
+      "sha256": "88d099d9399223f9ba3029813054f86c250dbc10b9a039f67e9bf70adb5f3c50"
     },
     {
       "path": ".gitignore",
@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2994,
-      "sha256": "8259d8be58af808a548e7c0c3c681112133f6830b97861057d089cad5696ef3a"
+      "bytes": 3056,
+      "sha256": "6a1bab0144cdbf131b671ea96508e4fd9aace5d1f6373b755e2dd870cb05f92c"
     },
     {
       "path": "assets/archive_manifest.json",
@@ -28,8 +28,8 @@
     },
     {
       "path": "assets/release_manifest.json",
-      "bytes": 3032,
-      "sha256": "94b82614bc1c87b2a0b0976cc99bc1dff5449fc97b5c79b12672b3443b163a53"
+      "bytes": 4174,
+      "sha256": "cb8f66790b326abba096edb54842303f7ac9447f41f356de849738c946dd9841"
     },
     {
       "path": "auto0776/.gitignore",
@@ -48,18 +48,18 @@
     },
     {
       "path": "auto0776/README.md",
-      "bytes": 4622,
-      "sha256": "bcec93a2ae8428f7486ea04a961b2a96423d1921d50f8cd83eb908542e262e3c"
+      "bytes": 4935,
+      "sha256": "8cdd825cf97ba0634160d31d305e0615158db5bfd526fd5de00d5884c48ad17e"
     },
     {
       "path": "auto0776/START_HERE.md",
-      "bytes": 3370,
-      "sha256": "a9abfb336c94d8a6cc4395225e3d5a84d2785e81cfc9109926fc9ebeef41f8fc"
+      "bytes": 3683,
+      "sha256": "4daee01ca4db16f6ef4722a975b973508b3054becac166f258924e6ce844b5e6"
     },
     {
       "path": "auto0776/assets/RECOVERY.md",
-      "bytes": 4225,
-      "sha256": "9c1d188523913217303c25ea8f6c19959e8b69cab4fee382d0b5fc5d69f877b7"
+      "bytes": 4544,
+      "sha256": "156233fb4576b536f075f59163d9f78453e6721bf942c2b56ec4e707910d863b"
     },
     {
       "path": "auto0776/assets/archives.json",
@@ -754,7 +754,7 @@
     {
       "path": "auto0776/manifests/files.json",
       "bytes": 256585,
-      "sha256": "7f0acc331e3e8045b773e5b939c65673fd0019119f9755743676dea7b8b43253"
+      "sha256": "29cbd69134aa2a17d39a18b7a8bfc077af5172dd5628748689c35abbcb0458e2"
     },
     {
       "path": "auto0776/manifests/skills_provenance.json",
@@ -5648,8 +5648,13 @@
     },
     {
       "path": "docs/COMPLETENESS.md",
-      "bytes": 2710,
-      "sha256": "dbc5e3ed7136e07019622792d5b87bfdbd7dd9e33b358519c724d484912ade80"
+      "bytes": 2973,
+      "sha256": "4708db02b700a22864cd76cd455e03288ead6b81968465cd31a8d2087c7eb1a8"
+    },
+    {
+      "path": "docs/RELEASE_NOTES.md",
+      "bytes": 1641,
+      "sha256": "46a6a39670a0c07496b796bb8741b5b3d7e4fde0b6516e66c41d8bcb96cd0287"
     },
     {
       "path": "licenses/README.md",
@@ -6038,8 +6043,8 @@
     },
     {
       "path": "verification/DELIVERY_STATUS.json",
-      "bytes": 676,
-      "sha256": "eaa7a65fb435e9a870e7bbd46ca603782b2608d5a051c339b45faa73765b5c99"
+      "bytes": 918,
+      "sha256": "7eaf2c8353e7d4ec736dda69542d0ab1c06b3fc9891db21316861c2b50ad10b0"
     },
     {
       "path": "verification/archive_transfer_check.json",
@@ -6048,8 +6053,13 @@
     },
     {
       "path": "verification/asset_tools_checks.json",
-      "bytes": 533,
-      "sha256": "9bf9067ecb747f8b6a4b72ca2570470490c187d4d6ac34583a9d7fd8b1a2bfd2"
+      "bytes": 638,
+      "sha256": "8e04c0efbf04bb774689e3a389d7c6f33fabf3b853934aa42dea2783b758d0c1"
+    },
+    {
+      "path": "verification/cloud_release_check.json",
+      "bytes": 4561,
+      "sha256": "657dd7036651996fba5e8ef1efbb6d709e8258562e80808666ff665ce8ad5f02"
     },
     {
       "path": "verification/handoff_integrity.json",
@@ -6062,14 +6072,24 @@
       "sha256": "e7c596a7dcc7333e3c912c5321635f267670e069d41520e92be2c9f1e681a1f3"
     },
     {
+      "path": "verification/model_asset_publication_review.json",
+      "bytes": 786,
+      "sha256": "592fbdb44dc671e1ec385ef31d42547405492b85e1d8efc77b34d6cd5e3cf05b"
+    },
+    {
       "path": "verification/publication_privacy.json",
-      "bytes": 1389,
-      "sha256": "e5f4d648a1f368c4ef210cad2af1a4fe5f9de2e7d0ae26a6c62d0684a54c8f74"
+      "bytes": 1655,
+      "sha256": "dd6d8b35a4e0fee17e7abd2c8330517721612633f1d7a2ca347d36d3dd074ded"
     },
     {
       "path": "verification/publication_projection.json",
-      "bytes": 356,
-      "sha256": "06ce9f5179fbd67aff7635cd9520bf0e242975a302c6868c26c3db9475d50ebc"
+      "bytes": 1446,
+      "sha256": "9e8e8b0c831560c26b5adffc85b41eae19c446dcf0ab906a46725b31e3cb2700"
+    },
+    {
+      "path": "verification/release_download_probe.json",
+      "bytes": 881,
+      "sha256": "ae43fc881c5ffccc5112c7314d9670e62193e2acc5b5cd0f64122d03888fdc63"
     }
   ]
 }

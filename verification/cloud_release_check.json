@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-24T17:02:35.357874+00:00",
+  "scope": "Public release server size and SHA256 digest matched against locally computed original archive transport parts.",
+  "repository": "khan114514/OneDC",
+  "release_id": 422835125,
+  "release_url": "https://github.com/khan114514/OneDC/releases/tag/onedc-assets-20261024",
+  "archive_sha256": "adf37d23103580414fe4df8f51d6e8ca642b79af717d758717b21d2b316a3a1d",
+  "verified_parts": [
+    {
+      "name": "onedc-assets.tar.gz.part-001",
+      "asset_id": 672724999,
+      "bytes": 1073741824,
+      "sha256": "9d049c4fdaa38d0309f630acffeceb25fe5eeaf58f9ee20ee4ee47202bc3764d",
+      "github_digest": "sha256:9d049c4fdaa38d0309f630acffeceb25fe5eeaf58f9ee20ee4ee47202bc3764d",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-001",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-002",
+      "asset_id": 672735217,
+      "bytes": 1073741824,
+      "sha256": "b41672df5daae4d3c3581a72e0a7cf8a5c34612d8310db395d254c2912ef1252",
+      "github_digest": "sha256:b41672df5daae4d3c3581a72e0a7cf8a5c34612d8310db395d254c2912ef1252",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-002",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-003",
+      "asset_id": 672751704,
+      "bytes": 1073741824,
+      "sha256": "14559c4b96e7ef8a8c863d5f663f52242e4bf5e0d707ff8fc7e1b83b98fb4f14",
+      "github_digest": "sha256:14559c4b96e7ef8a8c863d5f663f52242e4bf5e0d707ff8fc7e1b83b98fb4f14",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-003",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-004",
+      "asset_id": 672770044,
+      "bytes": 1073741824,
+      "sha256": "08635df79ec0e9693586f20002aeba03e9f0a7e468acde443abfc6ab44bb71dd",
+      "github_digest": "sha256:08635df79ec0e9693586f20002aeba03e9f0a7e468acde443abfc6ab44bb71dd",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-004",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-005",
+      "asset_id": 672813679,
+      "bytes": 1073741824,
+      "sha256": "56216c02bb02a63e81d9523b21ef77981d3519e7431aad3b5dc3db0f8a01fa82",
+      "github_digest": "sha256:56216c02bb02a63e81d9523b21ef77981d3519e7431aad3b5dc3db0f8a01fa82",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-005",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-006",
+      "asset_id": 672733580,
+      "bytes": 1073741824,
+      "sha256": "a013da94cd27ad29ef6c0b5ef92ab7d428130ba8474fda61e0cf5dd4d35614a9",
+      "github_digest": "sha256:a013da94cd27ad29ef6c0b5ef92ab7d428130ba8474fda61e0cf5dd4d35614a9",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-006",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-007",
+      "asset_id": 672750352,
+      "bytes": 1073741824,
+      "sha256": "f1c5b1549e3b24d1da45b5d57905046cf00bd40689bf70816fedea2429a2922a",
+      "github_digest": "sha256:f1c5b1549e3b24d1da45b5d57905046cf00bd40689bf70816fedea2429a2922a",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-007",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-008",
+      "asset_id": 672766253,
+      "bytes": 1073741824,
+      "sha256": "f1900c78b39f0284167c96a63976e144568e5eff133750b0da7dd0bfb1448258",
+      "github_digest": "sha256:f1900c78b39f0284167c96a63976e144568e5eff133750b0da7dd0bfb1448258",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-008",
+      "state": "uploaded"
+    },
+    {
+      "name": "onedc-assets.tar.gz.part-009",
+      "asset_id": 672760719,
+      "bytes": 603963649,
+      "sha256": "ce87d4af70a0221b642663d872e26582035a09011ccfe611895d8582b9c10b84",
+      "github_digest": "sha256:ce87d4af70a0221b642663d872e26582035a09011ccfe611895d8582b9c10b84",
+      "url": "https://github.com/khan114514/OneDC/releases/download/onedc-assets-20261024/onedc-assets.tar.gz.part-009",
+      "state": "uploaded"
+    }
+  ],
+  "verified_bytes": 9193898241,
+  "missing_parts": [],
+  "signed_redirects_recorded": false
+}

@@ -1,17 +1,21 @@
 {
-  "status": "IN_PROGRESS",
+  "status": "COMPLETE_ASSET_AND_HANDOFF_DELIVERY",
   "scope": "asset recovery and expert handoff, not final task acceptance",
   "source_and_handoff_staged": true,
   "hidden_inputs_recovered_and_verified": true,
   "model_archive_download": "complete",
   "model_archive_current_hash_verified": true,
-  "release_parts_uploaded_and_verified": false,
+  "release_parts_uploaded_and_verified": true,
   "gpu_or_model_execution_performed": false,
   "final_task_qa_passed": false,
   "source_and_handoff_uploaded": true,
-  "source_commit": "0a8e27d",
   "release_metadata_created": true,
   "model_archive_all_16_members_verified": true,
   "archive_sha256": "adf37d23103580414fe4df8f51d6e8ca642b79af717d758717b21d2b316a3a1d",
-  "archive_bytes": 9193898241
+  "archive_bytes": 9193898241,
+  "initial_source_commit": "0a8e27d",
+  "remaining_work_document": "docs/COMPLETENESS.md",
+  "release_part_count": 9,
+  "release_url": "https://github.com/khan114514/OneDC/releases/tag/onedc-assets-20261024",
+  "release_verified_bytes": 9193898241
 }

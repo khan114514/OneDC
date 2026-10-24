@@ -8,6 +8,7 @@
     "reject corrupt archive before extraction",
     "accept safe ancestor directory entries and extract nested file; reproduced failure before fix",
     "reject path-traversal before extraction",
-    "reject symlink before extraction"
+    "reject symlink before extraction",
+    "preserve verified first part after second-part failure, then resume and reconstruct exact archive"
   ]
 }

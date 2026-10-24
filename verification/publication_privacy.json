@@ -6,14 +6,14 @@
     "/home/onedc-agent"
   ],
   "explicit_container_tmpfs_exceptions": [],
-  "target": "publication-candidate",
+  "target": "final-source-publication-candidate",
   "status": "BLOCK",
-  "input_inventory_sha256": "dbdca37122b572ef58abf00e862ac565f0bd47fd36d0b4ca3e679641bf94e112",
+  "input_inventory_sha256": "cd4d5747c669b4f27599f54e9d80bd96850715fee23ca9d5d17c10212db9fff4",
   "input_file_sha256": null,
   "stats": {
-    "files": 1210,
+    "files": 1218,
     "archive_members": 0,
-    "decoded_bytes": 48244782,
+    "decoded_bytes": 48559765,
     "png_metadata_chunks": 172
   },
   "finding_count": 1,
@@ -36,5 +36,6 @@
   ],
   "unresolved_findings": [],
   "publication_review": "CLEARED_WITH_DOCUMENTED_NON_SECRET_FALSE_POSITIVE",
-  "official_privacy_check_completed": false
+  "official_privacy_check_completed": false,
+  "scope_note": "Prepublication source and evidence scan; final generated cloud receipts contain only fixed public asset names, URLs, byte counts and SHA256 values. Large numeric archive reviewed separately by exact identity to prior dedicated audit."
 }

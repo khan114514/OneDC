@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Actual public download URL range samples matched original archive offsets for the first and last part. Full part integrity is recorded using GitHub server digests.",
+  "parts": [
+    {
+      "part": "onedc-assets.tar.gz.part-001",
+      "http_status": 206,
+      "content_range": "bytes 0-1023/1073741824",
+      "sample_bytes": 1024,
+      "sample_sha256": "e02a8130811ee7d7119451e9489e830ebebf9ebdacf600d7fe589d7602c51052",
+      "matches_local_archive": true,
+      "signed_redirects_recorded": false
+    },
+    {
+      "part": "onedc-assets.tar.gz.part-009",
+      "http_status": 206,
+      "content_range": "bytes 0-1023/603963649",
+      "sample_bytes": 1024,
+      "sample_sha256": "f9473c351781584446bdb293e635a1a7a5f71d9794217295a51f17a0214907a1",
+      "matches_local_archive": true,
+      "signed_redirects_recorded": false
+    }
+  ]
+}
